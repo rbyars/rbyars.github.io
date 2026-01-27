@@ -27,14 +27,16 @@
         }
 
         /* Typography */
-        h1 {
-            font-size: clamp(3rem, 8vw, 6rem); /* Responsive giant text */
+      h1 {
+            /* Changed from clamp(3rem, 8vw, 6rem) */
+            font-size: clamp(2.5rem, 5vw, 4.5rem); 
             font-weight: 900;
             letter-spacing: -0.04em;
             line-height: 1;
             margin-bottom: calc(var(--spacing-unit) * 2);
+            /* Optional: Ensures the text never wraps, scaling down if needed */
+            white-space: nowrap; 
         }
-
         h2 {
             font-size: 1.2rem;
             text-transform: uppercase;
